@@ -1,0 +1,36 @@
+.headerMain {
+  height: 60px;
+  background-color: #ffff;
+  position: sticky;
+  left: 0;
+  // margin-bottom:1rem ;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  @media (max-width: 600px) {
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &--logo {
+      width: 170px;
+      @media (max-width: 600px) {
+      width: 100px;
+        }
+    }
+  }
+  &-rightSection{
+    display: flex;
+    align-items: center;
+  }
+}

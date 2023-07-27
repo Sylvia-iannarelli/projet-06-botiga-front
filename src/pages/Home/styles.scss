@@ -1,0 +1,81 @@
+// import du theme
+@use '../../styles/vars';
+
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &-logoHome{
+    height: 80px;
+    border: 1px solid red;
+  }
+  &--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../Photo-Botiga/background-farmer.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+ 
+  &-title{
+    display: flex;
+    font-family: 'Montserrat', cursive;
+    color:white;
+    padding: 0.5rem;
+    background-color: rgba(77, 77, 77, 0.546);
+    border-radius: 0.5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    @media (max-width: 600px) {
+    font-size: 1.4rem;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    padding:2rem;
+    @media (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 600px) {
+      display: flex; 
+      flex-direction: column;
+    }
+  }
+ 
+  &-centered {
+    display: flex;
+    color: white;
+    @media (max-width: 600px) {
+    }
+  }
+  
+  
+}
+
+.ui.cards {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  width: 100%;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: -0.875em -0.5em;
+  }
+  }

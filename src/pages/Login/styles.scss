@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+  &-buttonreturn {
+  width: 80px;
+  margin-left: 1rem !important;
+  }
+
+  &--container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--logo {
+      width: 40px;
+    }
+
+    form {
+      width: 300px;
+
+    }
+  }
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

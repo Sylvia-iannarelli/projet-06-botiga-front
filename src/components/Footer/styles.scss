@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem;
+  margin-top: 25px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: 'Raleway';
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 2.6px;
+  p {
+    margin: 0;
+  }
+  &--icon{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.order-detail-page {
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction:column ;
+    }
+
+  .order-button {
+    margin-bottom: 20px;
+    margin-top: 75px;
+  }
+
+  .order-and-shop-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+        flex-direction: column;
+      }
+
+    .order-container {
+      flex: 60%;
+      margin-right: 20px;
+    }
+
+    .shop-container {
+      flex: 40%;
+    }
+  }
+
+  .segment {
+    margin-bottom: 20px;
+
+    h2 {
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    h3 {
+      color: #333;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    p {
+      color: #777;
+      font-size: 1em;
+    }
+  }
+
+  .list {
+    .item {
+      margin-bottom: 10px;
+
+      .content {
+        .header {
+          color: #333;
+          font-weight: bold;
+        }
+
+        .description {
+          color: #777;
+        }
+      }
+    }
+  }
+}
+

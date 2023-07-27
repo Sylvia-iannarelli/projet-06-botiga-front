@@ -1,0 +1,101 @@
+.product {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--container {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    button {
+      width: 100px;
+      height: 40px;
+    }
+  }
+
+  &--layout {
+    max-width: 95vw;
+    margin-top: 15px;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  &--images {
+    img{
+    max-width: 100%;
+    }
+  }
+
+  &--imageGroup {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    margin-bottom: 15px;
+    img {
+      max-width: 25%;
+    }
+  }
+
+  &--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .ui.card {
+      width: 100%;
+    }
+
+    .ui.segment {
+      width: 100%;
+    }
+  }
+
+  &--input {
+    width: 60%;
+  }
+
+  .ui.blue.icon.right.labeled.button {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+
+// ===========================
+// ===== RESPONSIVE ==========
+// ===========================
+
+@media (min-width: 900px) {
+  .product {
+    &--layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &--images {
+      max-width: 50%;
+    }
+    &--info {
+      max-width: 45%;
+    }
+
+    button {
+      width: 120px;
+    }
+    .ui.blue.icon.right.labeled.button {
+      width: 150px;
+      font-size: 1rem;
+    }
+  }
+}
+

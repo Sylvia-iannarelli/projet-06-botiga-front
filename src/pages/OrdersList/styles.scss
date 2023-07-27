@@ -1,0 +1,225 @@
+.orderList {
+  padding: 2rem 0;
+
+  &--buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 130px;
+  }
+
+  .four.wide.column {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &--title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &--container {
+    padding: 2rem;
+
+    .orderList--items {
+      margin-top: 50px;
+
+      .orderList--item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border: none;
+        box-shadow: none;
+        border-radius: 0%;
+        border-bottom: 1px solid rgb(155, 155, 155);
+
+        &--title {
+          font-size: 1.5rem;
+        }
+
+        &--detail {
+          font-size: 1.1rem;
+          font-family: 'Raleway';
+        }
+
+        &--articleInfo {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          &--quantity {
+            width: 25px;
+            height: 24px;
+            background-color: rgb(235, 235, 235);
+            color: rgb(34, 34, 34);
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+          }
+
+          span {
+            font-family: 'Raleway';
+          }
+        }
+
+        .ui.grid {
+          width: 100%;
+          margin: 0;
+
+          .column {
+            padding: 0;
+
+            &:nth-child(1) {
+              padding-right: 1rem;
+            }
+
+            &:nth-child(2) {
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+
+            &:nth-child(3) {
+              margin-top: 45px;
+            }
+
+            &:nth-child(1) {
+              @media screen and (max-width: 572px) {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .customColumn {
+          display: flex;
+          justify-content: flex-start;
+
+          .orderList--item--info {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            span {
+              margin-bottom: 0.5rem;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            .orderList--item-title {
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+
+        .ui.button {
+          width: 150px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+// =====================
+// RESPONSIVE
+// =====================
+
+@media (max-width: 990px) {
+  .orderList {
+    &--title {
+      font-size: calc(2rem - 0.2rem);
+    }
+    &--buttons {
+      margin-top: 25px;
+      gap: 15px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    }
+    &--container {
+      .orderList--items {
+        .orderList--item {
+          &--title {
+            font-size: calc(1.5rem - 0.2rem);
+          }
+          .orderList--item--info {
+            span {
+              font-size: calc(1.1rem - 0.2rem);
+            }
+          }
+          &--articleInfo {
+            &--quantity {
+              font-size: calc(1.6rem - 0.2rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .orderList--item {
+    .ui.grid {
+      flex-direction: row;
+      .row {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.orderList {
+
+  @media screen and (max-width: 572px) {
+    &--title {
+      font-size: 5vw; // Adjust the value according to your needs
+    }
+
+    &--container {
+      .orderList--items {
+        .orderList--item {
+          &--title {
+            font-size: 4vw; // Adjust the value according to your needs
+          }
+
+          &--detail {
+            font-size: 1.1vw; // Adjust the value according to your needs
+          }
+
+          &--articleInfo {
+            &--quantity {
+              font-size: 1.6vw; // Adjust the value according to your needs
+            }
+
+            span {
+              font-size: 1vw; // Adjust the value according to your needs
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    flex-direction: row;
+    height: auto;
+
+    .ui.button {
+      width: 115px !important;  // reduce button width to 100px
+      height: 35px !important; // reduce button height to 30px
+      font-size: 0.8rem; // reduce font size to 0.5rem
+    }
+  }
+}
+
+         

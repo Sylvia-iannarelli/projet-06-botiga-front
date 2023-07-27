@@ -1,0 +1,62 @@
+[
+  {
+    "userCode": "U001",
+    "firstname": "Alice",
+    "lastname": "Dubois",
+    "email": "alice.dubois@example.com",
+    "phone": "+33612345678",
+    "password": "alice123",
+    "role": "admin",
+    "connected": false,
+    "createdAt": "2023-01-10T08:30:00.000Z",
+    "updatedAt": "2023-01-10T08:30:00.000Z"
+  },
+  {
+    "userCode": "U002",
+    "firstname": "Bob",
+    "lastname": "Martin",
+    "email": "bob.martin@example.com",
+    "phone": "+33623456789",
+    "password": "bob123",
+    "role": "user",
+    "connected": false,
+    "createdAt": "2023-02-15T12:45:00.000Z",
+    "updatedAt": "2023-02-15T12:45:00.000Z"
+  },
+  {
+    "userCode": "U003",
+    "firstname": "Caroline",
+    "lastname": "Petit",
+    "email": "caroline.petit@example.com",
+    "phone": "+33634567890",
+    "password": "caroline123",
+    "role": "user",
+    "connected": false,
+    "createdAt": "2023-03-20T14:20:00.000Z",
+    "updatedAt": "2023-03-20T14:20:00.000Z"
+  },
+  {
+    "userCode": "U004",
+    "firstname": "David",
+    "lastname": "Leroy",
+    "email": "david.leroy@example.com",
+    "phone": "+33645678901",
+    "password": "david123",
+    "role": "admin",
+    "connected": false,
+    "createdAt": "2023-04-25T09:50:00.000Z",
+    "updatedAt": "2023-04-25T09:50:00.000Z"
+  },
+  {
+    "userCode": "U005",
+    "firstname": "Eva",
+    "lastname": "Moreau",
+    "email": "eva.moreau@example.com",
+    "phone": "+33656789012",
+    "password": "eva123",
+    "role": "user",
+    "connected": false,
+    "createdAt": "2023-05-30T17:35:00.000Z",
+    "updatedAt": "2023-05-30T17:35:00.000Z"
+  }
+]

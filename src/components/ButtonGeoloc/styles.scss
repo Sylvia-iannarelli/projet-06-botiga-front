@@ -1,0 +1,30 @@
+.buttonGeoloc {
+
+  &--button {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 4px 4px 0;
+    background-color: white;
+    border-width: 0px;
+    transform: translateX(-2px);
+    height: 38px;
+  }
+
+  @media (max-width: 1200px) and (min-width: 960px) {
+    .buttonGeoloc {
+      max-width: 5%;
+    }
+  }
+  
+  @media (max-width: 960px) and (min-width: 640px) {
+    .buttonGeoloc {
+      max-width: 8%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .buttonGeoloc {
+      max-width: 10%;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.container {
+ // ajout d'une taille pour afficher la carte
+  &-map{
+    width: 700px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,69 @@
+@use 'src/styles/vars';
+.store{
+  color: vars.$anthracite;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  &-custombutton{
+    margin: 1rem !important;
+  }
+  &-background{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    
+  width: 100%;
+  background-image: url("../../../Photo-Botiga/background-farmer.png");
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  }
+
+  @media (max-width: 600px) {
+      background: none;
+    }
+ 
+  @media (max-width: 600px) {
+    text-align: center;
+
+  }
+  &-products{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+    @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    }
+  }
+  
+  &-description{
+    padding: 1rem;
+    width: 100%;
+    @media (max-width: 600px) {
+      }
+  }
+  &-customh1{
+    color: vars.$green;
+  }
+  &-customsection{
+   font-family: 'Montserrat';
+  }
+    
+    &-imgCustom{ 
+      margin-top: 1rem;
+      width: 30em;
+      @media (max-width: 600px) {
+      margin-top: 0;
+      width: 100%;
+      }
+    }
+}
+ .ui.centered.card {
+   margin: 1rem;
+ }

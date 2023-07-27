@@ -1,0 +1,73 @@
+@use 'src/styles/vars';
+.inputGeoloc {
+  height: 36px;
+  width: 250px;
+  font-family: 'Raleway';
+  color: vars.$anthracite;
+  @media (max-width: 600px) {
+    height: 36px;
+    max-width: 200px;
+  }
+
+  &--input {
+    width: 100%;
+  }
+
+  .css-b62m3t-container {
+    border-right: none;
+    width: 288px;
+  }
+    
+  .css-13cymwt-control {
+    border-radius: 4px 4px 4px 4px;
+    border: none !important;
+  }
+
+  .css-1fdsijx-ValueContainer {
+    cursor: text;
+  }
+
+  .css-1xc3v61-indicatorContainer {
+    display: none;
+  }
+
+  .css-t3ipsp-control {
+    border: none;
+  }
+
+  @media (max-width: 1200px) and (min-width: 960px) {
+    .css-b62m3t-container{
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 960px) and (min-width: 640px) {
+    .css-b62m3t-container{
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .css-b62m3t-container{
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 960px) {
+    .inputGeoloc{
+      max-width: 33%;
+    }
+  }
+  
+  @media (max-width: 960px) and (min-width: 640px) {
+    .inputGeoloc{
+      max-width: 33%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .inputGeoloc{
+      max-width: 20%;
+    }
+  }
+}

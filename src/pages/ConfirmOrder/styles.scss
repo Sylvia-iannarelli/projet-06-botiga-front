@@ -1,0 +1,49 @@
+.order-confirmation {
+  text-align: center;
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      height: 600px;
+      margin-top: 50px;
+    }
+
+    &--message {
+      display: flex;
+      justify-content: flex-end;
+      margin: 20px 0;
+      width: 25%;
+      background-color: #5AB3A2;
+      font-family: 'Raleway';
+      font-size: 1.5rem;
+      border-radius: 5px;
+      height: 155px;
+      padding: 20px;
+      position: relative;
+      
+
+      &::after {
+        content: ""; 
+        border-left: 20px solid #5AB3A2; 
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+        position: absolute;
+        right: -20px;
+        top: 80%;
+      }
+      
+    }
+  }
+
+  &__button {
+    background-color: #5AB3A2;
+    margin-top: 52px;
+    color: white;
+
+    &:hover {
+      background-color: #1678c2;
+    }
+  }
+}
