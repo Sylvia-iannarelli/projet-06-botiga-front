@@ -71,7 +71,7 @@ const Store = () => {
               >
                 <CardInfos
                   props={product}
-                  image={fakeImage}
+                  image={product.picture}
                   className="store-product"
                 />
               </Link>
