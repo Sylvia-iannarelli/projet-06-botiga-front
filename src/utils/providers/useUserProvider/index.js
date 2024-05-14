@@ -39,7 +39,7 @@ const useUserContext = () => {
     // username: 'soven@oclock.io',
     // password: "Ereul9Aeng",
     await axios
-      .post('http://sylvia-iannarelli-server.eddi.cloud/api/login_check', {
+      .post('http://localhost:8000/api/login_check', {
         username: email,
         password: password,
       })
@@ -70,7 +70,7 @@ const useUserContext = () => {
     try {
       const result = await axios.get(
 
-        'http://sylvia-iannarelli-server.eddi.cloud/api/orders',config
+        'http://localhost:8000/api/orders',config
       );
       setOrders(result.data);
       console.log("🚀 ~ file: index.js:80 ~ getOrders ~ result:", result);
@@ -84,7 +84,7 @@ const useUserContext = () => {
   };
   const signIn = async (userData) => {
     await axios
-      .post('http://sylvia-iannarelli-server.eddi.cloud/api/users/new', {
+      .post('http://localhost:8000/api/users/new', {
         email: userData.email,
         password: userData.password,
         roles: ['ROLE_USER'],
@@ -126,7 +126,7 @@ const useUserContext = () => {
 
     await axios
       .put(
-        `http://sylvia-iannarelli-server.eddi.cloud/api/users/${userId}`,
+        `http://localhost:8000/api/users/${userId}`,
         bodyParameters,
         config,
       )

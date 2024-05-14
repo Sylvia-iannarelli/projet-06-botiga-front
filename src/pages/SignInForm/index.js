@@ -100,7 +100,7 @@ const SignInForm = () => {
       <div className="signIn-form">
         <h2>Rejoignez nous! </h2>
         <a
-          href="http://sylvia-iannarelli-server.eddi.cloud/user/new"
+          href="http://localhost:8000/user/new"
           className="signIn-backoffice"
         >
           <h3 className="signIn-producerText">

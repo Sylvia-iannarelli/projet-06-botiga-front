@@ -4,7 +4,7 @@ const getStore = async (setProducerData) => {
   try {
     const result = await axios.get(
       // URL
-      'http://sylvia-iannarelli-server.eddi.cloud/api/stores',
+      'http://localhost:8000/api/stores',
     );
     setProducerData(result.data);
     // on a recuperé les recettes préférées on va les ajouter dans le state

@@ -24,7 +24,7 @@ const Product = () => {
     try {
       const result = await axios.get(
         // URL
-        `http://sylvia-iannarelli-server.eddi.cloud/api/products/${product}`,
+        `http://localhost:8000/api/products/${product}`,
       );
       setProductData(result.data);
     }

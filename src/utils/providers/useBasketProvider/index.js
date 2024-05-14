@@ -89,7 +89,7 @@ const useBasketProvider = () => {
     if (authToken) {
       try {
         const result = await axios.post(
-          'http://sylvia-iannarelli-server.eddi.cloud/api/orders/new',
+          'http://localhost:8000/api/orders/new',
           arrayOfProducers,
           config,
         );
