@@ -37,7 +37,7 @@ const useUserContext = () => {
   // Permet de trouver un utilisateur en fonction des données qu'il aura rentré dans les champs email et password de la page login
   const login = async (email, password) => {
     // username: 'soven@oclock.io',
-    // password: "Ereul9Aeng",
+    // password: "...",
     await axios
       .post('http://localhost:8000/api/login_check', {
         username: email,
