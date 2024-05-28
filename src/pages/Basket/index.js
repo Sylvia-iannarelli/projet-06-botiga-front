@@ -21,7 +21,7 @@ const Basket = () => {
     basketProducts.forEach((product) => {
       newTotal += product.price * product.quantity;
     });
-    setTotal(newTotal);
+    setTotal(Math.round(newTotal * 100) / 100);
   }, [basketProducts]);
 
 
@@ -45,6 +45,7 @@ const Basket = () => {
                 quantity={product.quantity}
                 productName={product.name}
                 price={product.price}
+                picture={product.picture}
                 index={index}
                 setProductQuantity={setProductQuantity}
                 handleDelete={handleDelete}
@@ -58,7 +59,7 @@ const Basket = () => {
           <Form>
             <Form.Field>
               <p>Total de la commande</p>
-              <p>{total} $</p>
+              <p>{total} €</p>
               <Label>un code promo ?</Label>
               <input placeholder="BotigaF0r4v4r" />
             </Form.Field>

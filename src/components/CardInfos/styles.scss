@@ -4,6 +4,9 @@
   &:hover {
       transform: scale(1.03);
     }
+  .ui.image {
+    max-height: 200px;
+  }
 }
 .date{
   color: vars.$green;

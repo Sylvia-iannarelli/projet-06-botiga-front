@@ -89,8 +89,6 @@ function OrderDetails() {
             <Segment>
               <Header as="h2">{currentName && currentName}</Header>
               <Image src={producerimg} />
-              <p>Adresse : shop Adresse</p>
-              <p>Horaires d'ouverture : schedules</p>
               <Link to={`/local-market/${currentId && currentId}`}>
                 <Button className="order-button">
                   Voir la boutique du producteur

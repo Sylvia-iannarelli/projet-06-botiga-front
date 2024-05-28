@@ -44,56 +44,53 @@ const Product = () => {
           Retour
         </Button>
         <div className="product--layout">
-          <article className="product--images">
-              <img className="product--imgBig" src="https://react.semantic-ui.com/images/wireframe/image.png" />
-              <div className="product--imageGroup">
-                <img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                <img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                <img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-              </div>
-          </article>
+          {productData && (
+            <article className="product--images">
+              <img className="product--imgBig" src={productData.picture} alt="le produit" />
+            </article>
+          )}
           <div className="product--info">
-              {productData && (
-                <Card>
-                  <Card.Content>
-                    <Card.Header>{productData.name}</Card.Header>
-                    <Card.Meta>
-                      <span className="date">{productData.store.name}</span>
-                    </Card.Meta>
-                    <Card.Description>
-                      {productData.description}
-                    </Card.Description>
-                  </Card.Content>
-                  <Card.Content extra>
-                    <Segment compact>
-                      <h3 style={{ textAlign: 'center', margin: '0' }}>
-                        {productData.price} €
-                      </h3>
-                    </Segment>
-                    <Button
-                      color="blue"
-                      labelPosition="right"
-                      icon="cart"
-                      content="Ajouter 1 au panier"
-                      onClick={() => {
-                        toast.success("Le produit à été ajouté au panier", { theme: "colored", autoClose: 1200});
-                        addProduct(productData);
-                      }}
-                    />
-                  </Card.Content>
-                </Card>
-              )}
+            {productData && (
+              <Card>
+                <Card.Content>
+                  <Card.Header>{productData.name}</Card.Header>
+                  <Card.Meta>
+                    <span className="date">{productData.store.name}</span>
+                  </Card.Meta>
+                  <Card.Description>
+                    {productData.description}
+                  </Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                  <Segment compact>
+                    <h3 style={{ textAlign: 'center', margin: '0' }}>
+                      {productData.price} €
+                    </h3>
+                  </Segment>
+                  <Button
+                    color="blue"
+                    labelPosition="right"
+                    icon="cart"
+                    content="Ajouter 1 au panier"
+                    onClick={() => {
+                      toast.success('Le produit a été ajouté au panier', { theme: 'colored', autoClose: 1200 });
+                      addProduct(productData);
+                    }}
+                  />
+                </Card.Content>
+              </Card>
+            )}
 
-              <Segment>
-                <Header as="h3">Informations supplémentaires</Header>
-                <p>
-                  Informations supplémentaires sur le produit. Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam.
-                </p>
-              </Segment>
-            </div>
+            <Segment>
+              <Header as="h3">Informations supplémentaires</Header>
+              <p>
+                Informations supplémentaires sur le produit. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam.
+              </p>
+            </Segment>
+          </div>
         </div>
       </section>
       <Footer />

@@ -1,5 +1,7 @@
 import { Button, Image, Grid } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import producerimg from '../../../Photo-Botiga/fruit-legume.png';
+
 
 // TODO propTypes
 const OrderLine = ({ order }) => {
@@ -13,7 +15,7 @@ const OrderLine = ({ order }) => {
             <Image
               floated="left"
               size="large"
-              src="https://react.semantic-ui.com/images/avatar/large/molly.png"
+              src={producerimg}
             />
           </Grid.Column>
           <Grid.Column

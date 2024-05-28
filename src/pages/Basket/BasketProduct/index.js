@@ -8,6 +8,7 @@ const BasketProduct = ({
   quantity,
   productName,
   price,
+  picture,
   index,
   setProductQuantity,
   handleDelete,
@@ -18,10 +19,10 @@ const BasketProduct = ({
         <Image
           floated="left"
           size="small"
-          src="https://react.semantic-ui.com/images/avatar/large/molly.png"
+          src={picture}
         />
         <h5>{productName}</h5>
-        <h5>prix unitaire:{price}$</h5>
+        <h5>prix unitaire : {price} €</h5>
         <div className="basket-label">
           Quantité : {quantity}
           <Input
@@ -30,7 +31,7 @@ const BasketProduct = ({
             value={quantity}
             onChange={(e) => setProductQuantity(Number(e.target.value), index)}
           />
-          {price * quantity}
+          {price * quantity} €
           <div
             onClick={() => {
               handleDelete(index);

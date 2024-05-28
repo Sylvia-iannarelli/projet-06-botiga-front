@@ -17,6 +17,9 @@
   &-product{
   position:relative;
   padding: 1rem;
+  .ui.small.image {
+    max-height: 150px;
+    }
   @media (max-width: 600px) {
     .ui.input>input:not([type=color]) {
       width: 40px;
