@@ -100,7 +100,8 @@ const SignInForm = () => {
       <div className="signIn-form">
         <h2>Rejoignez nous! </h2>
         <a
-          href="http://localhost:8000/user/new"
+        //   href="http://localhost:8000/user/new"
+          href="https://botiga-back-office.iannarelli.fr/user/new"
           className="signIn-backoffice"
         >
           <h3 className="signIn-producerText">

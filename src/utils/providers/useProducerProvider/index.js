@@ -10,7 +10,8 @@ const useProducerProvider = () => {
   const getProducerById = async (id) => {
     try {
       const result = await axios.get(
-        `http://localhost:8000/api/stores/${id}`,
+        // `http://localhost:8000/api/stores/${id}`,
+        `https://botiga-back-office.iannarelli.fr/api/stores/${id}`,
       );
       const producerResult = result;
       setProducerData([producerResult.data]);
@@ -23,7 +24,8 @@ const useProducerProvider = () => {
   const getProductByProducer = async (id) => {
     try {
       const result = await axios.get(
-        `http://localhost:8000/api/stores/${id}/products`,
+        // `http://localhost:8000/api/stores/${id}/products`,
+        `https://botiga-back-office.iannarelli.fr/api/stores/${id}/products`,
       );
       setProducerProducts(result.data.products);
     }

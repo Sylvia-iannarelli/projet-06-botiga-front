@@ -39,7 +39,8 @@ const useUserContext = () => {
     // username: 'soven@oclock.io',
     // password: "...",
     await axios
-      .post('http://localhost:8000/api/login_check', {
+      // .post('http://localhost:8000/api/login_check', {
+      .post('https://botiga-back-office.iannarelli.fr/api/login_check', {
         username: email,
         password: password,
       })
@@ -60,31 +61,32 @@ const useUserContext = () => {
         throw err;
       });
   };
-  
+
   const getOrders = async () => {
-    const authToken = localStorage.getItem("authToken");
+    const authToken = localStorage.getItem('authToken');
     const config = {
-      headers: { Authorization: `Bearer ${authToken}` }
+      headers: { Authorization: `Bearer ${authToken}` },
     };
-      console.log("🚀 ~ file: index.js:70 ~ getOrders ~ token:", authToken);
+    console.log('🚀 ~ file: index.js:70 ~ getOrders ~ token:', authToken);
     try {
       const result = await axios.get(
 
-        'http://localhost:8000/api/orders',config
-      );
+        // 'http://localhost:8000/api/orders', config);
+        'https://botiga-back-office.iannarelli.fr/api/orders', config);
       setOrders(result.data);
-      console.log("🚀 ~ file: index.js:80 ~ getOrders ~ result:", result);
+      console.log('🚀 ~ file: index.js:80 ~ getOrders ~ result:', result);
       // on a recuperé les recettes préférées on va les ajouter dans le state
     }
-      
+
     catch (e) {
       // afficher une erreur
-       console.log(e);
+      console.log(e);
     }
   };
   const signIn = async (userData) => {
     await axios
-      .post('http://localhost:8000/api/users/new', {
+      // .post('http://localhost:8000/api/users/new', {
+      .post('https://botiga-back-office.iannarelli.fr/api/users/new', {
         email: userData.email,
         password: userData.password,
         roles: ['ROLE_USER'],
@@ -126,7 +128,8 @@ const useUserContext = () => {
 
     await axios
       .put(
-        `http://localhost:8000/api/users/${userId}`,
+        // `http://localhost:8000/api/users/${userId}`,
+        `https://botiga-back-office.iannarelli.fr/api/users/${userId}`,
         bodyParameters,
         config,
       )
@@ -149,7 +152,7 @@ const useUserContext = () => {
     signIn,
     orders,
     setOrders,
-    getOrders
+    getOrders,
   };
 };
 

@@ -89,7 +89,8 @@ const useBasketProvider = () => {
     if (authToken) {
       try {
         const result = await axios.post(
-          'http://localhost:8000/api/orders/new',
+          // 'http://localhost:8000/api/orders/new',
+          'https://botiga-back-office.iannarelli.fr/api/orders/new',
           arrayOfProducers,
           config,
         );

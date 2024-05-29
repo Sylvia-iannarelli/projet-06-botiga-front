@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from 'react';
 import {
-  Grid, Image, Card, Segment, Header, Button,
+  Card, Segment, Header, Button,
 } from 'semantic-ui-react';
 import axios from 'axios';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -20,11 +20,21 @@ const Product = () => {
 
   const [productData, setProductData] = useState();
 
+  // let URL_API = '';
+  // if (import.meta.env.MODE === 'development') {
+  //   URL_API = `http://localhost:8000/api/products/${product}`;
+  // }
+  // else {
+  //   URL_API = `https://botiga-back-office.iannarelli.fr/api/products/${product}`;
+  // }
+
   const getProduct = async () => {
     try {
       const result = await axios.get(
         // URL
-        `http://localhost:8000/api/products/${product}`,
+        // URL_API,
+        // `http://localhost:8000/api/products/${product}`,
+        `https://botiga-back-office.iannarelli.fr/api/products/${product}`,
       );
       setProductData(result.data);
     }

@@ -4,7 +4,8 @@ const getStore = async (setProducerData) => {
   try {
     const result = await axios.get(
       // URL
-      'http://localhost:8000/api/stores',
+      // 'http://localhost:8000/api/stores',
+      'https://botiga-back-office.iannarelli.fr/api/stores',
     );
     setProducerData(result.data);
     // on a recuperé les recettes préférées on va les ajouter dans le state
