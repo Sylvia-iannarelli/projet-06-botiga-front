@@ -49,9 +49,9 @@ const Store = () => {
                 <div className="store-customsection">
                   <p>{producer.description}</p>
                   <p>
-                    <span> {producer.city}</span>
                     <span> {producer.street}</span>
                     <span> {producer.zip}</span>
+                    <span> {producer.city}</span>
                   </p>
                   <a href={producer.website}>
                     Site internet <span><Icon name="linkify" /></span>

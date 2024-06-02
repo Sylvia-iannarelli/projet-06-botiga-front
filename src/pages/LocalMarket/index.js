@@ -13,7 +13,6 @@ const LocalMarket = () => {
       <main>
         <DescriptionMap />
         <ProducersSlidder />
-        <ProducersSlidder />
       </main>
       <Footer />
     </div>

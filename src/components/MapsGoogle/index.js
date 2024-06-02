@@ -72,6 +72,7 @@ const MapsGoogle = () => {
                 <p>
                   {selectedInfo.number}
                   {selectedInfo.street}
+                  {selectedInfo.city}
                 </p>
                 <a
                   target="_blank"
