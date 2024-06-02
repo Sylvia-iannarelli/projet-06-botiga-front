@@ -70,9 +70,7 @@ const MapsGoogle = () => {
                 <p>{selectedInfo.description}</p>
                 <p>{selectedInfo.schedules}</p>
                 <p>
-                  {selectedInfo.number}
-                  {selectedInfo.street}
-                  {selectedInfo.city}
+                  {selectedInfo.street} {selectedInfo.zip} {selectedInfo.city}
                 </p>
                 <a
                   target="_blank"

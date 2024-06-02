@@ -53,9 +53,12 @@ const Store = () => {
                     <span> {producer.zip}</span>
                     <span> {producer.city}</span>
                   </p>
-                  <a href={producer.website}>
-                    Site internet <span><Icon name="linkify" /></span>
-                  </a>
+                  <p>
+                    <span> <Icon name="phone" /> {producer.phone} | </span>
+                    <a href={producer.website}>
+                      Site internet <span><Icon name="linkify" /></span>
+                    </a>
+                  </p>
                 </div>
               </section>
             );
