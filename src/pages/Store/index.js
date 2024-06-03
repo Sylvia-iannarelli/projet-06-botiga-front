@@ -55,7 +55,11 @@ const Store = () => {
                   </p>
                   <p>
                     <span> <Icon name="phone" /> {producer.phone} | </span>
-                    <a href={producer.website}>
+                    <a
+                      href={producer.website}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Site internet <span><Icon name="linkify" /></span>
                     </a>
                   </p>
